@@ -19,4 +19,5 @@ from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-]
+    path('myauth/', include('app_auth.urls')),
+    path('', include('app_advertisements.urls'))
